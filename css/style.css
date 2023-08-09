@@ -12,8 +12,6 @@ body {
   color: #b7dcdf;
   font-family: "Barlow";
   overflow: hidden;
-  max-width: 1400px;
-  width: 100%;
   background: #243339;
   margin: 0 auto;
 }
@@ -22,6 +20,7 @@ header {
   z-index: 9999;
   position: sticky;
   background: #243339;
+  padding-inline: 40px;
 }
 
 .scene {
