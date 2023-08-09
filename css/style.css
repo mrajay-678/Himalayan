@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  color: #b7dcdf;
+  font-family: "Barlow";
+  overflow: hidden;
+  max-width: 1400px;
+  width: 100%;
+  background: #243339;
+  margin: 0 auto;
+}
+
+header {
+  z-index: 9999;
+  position: sticky;
+  background: #243339;
+}
+
+.scene {
+  position: relative;
+  background: #283337;
+  height: 100vh;
+}
+.scene .content {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  z-index: 9999;
+  text-align: center;
+}
+
+h1 {
+  position: relative;
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-family: test;
+  color: #fff;
+  z-index: 10;
+}
+
+.magic {
+  z-index: 5;
+  position: absolute;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
+  width: 20rem;
+  height: 20rem;
+  background: url("../img/Himmaleh-Coming-Soon-BG.jpg") 50% 50% no-repeat fixed;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px #283337, 0 0 10px #283337;
+}
+
+.check-out {
+  z-index: 100;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #fff;
+  font-family: test;
+}
+
+a {
+  text-decoration: none;
+  color: #b7dcdf;
+}
+a:hover {
+  color: #b7dcdf;
+}
+
+.comming-soon {
+  text-align: center;
+}
+.comming-soon h3 {
+  margin-top: 0.5rem;
+  letter-spacing: 3px;
+}
+.comming-soon:after {
+  content: ".";
+}
+.comming-soon:before {
+  content: ".";
+}/*# sourceMappingURL=style.css.map */
