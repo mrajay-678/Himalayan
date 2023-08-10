@@ -19,22 +19,36 @@ body {
     margin: 0 auto;
 }
 
+//  body 
+//     {
+//         background: url('../img/des-grid.png');
+//         background-size: cover;
+//     }
 header {
-    z-index: 9999;
-    position: sticky;
-    // background: #243339;
-    padding-inline: 40px;
+    // z-index: 9999;
+    // position: sticky;
+    // // background: #243339;
+    padding-inline: 39px;
+    padding-top: 38px;
+
+    img {
+        width: 250px;
+    }
+}
+
+span.text {
+    font-size: 27px;
 }
 
 .scene {
     position: relative;
-    background: #283337;
+    // background: #283337;
     height: 100vh;
 
     .content {
         position: absolute;
-        top: 35%;
-        left: 15%;
+        top: 40%;
+        left: 16.8%;
         z-index: 9999;
         text-align: center;
     }
@@ -61,16 +75,18 @@ h1 {
     border-radius: 50%;
     box-shadow: 10px 10px 10px #283337, 0 0 10px #283337;
     transform-style: preserve-3d;
+    border: 2px solid #283337;
 
-    &:after
-    {
+    &:after {
         content: "";
-        background: url('../img/mouse-hover.png') ;
+        background: url('../img/mouse-hover.png');
         background-size: cover;
         width: 20rem;
         height: 20rem;
         position: absolute;
         border-radius: 50%;
+        top: -1px;
+        left: -1px;
     }
 }
 
@@ -86,6 +102,11 @@ h1 {
 
 }
 
+.mail-me {
+    font-size: 18px;
+    margin-right: 13px;
+}
+
 a {
     text-decoration: none;
     color: #b7dcdf;
@@ -97,11 +118,15 @@ a {
 
 .comming-soon {
     h3 {
-        margin-top: 0.5rem;
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+        font-weight: 600;
+        font-size: 23px;
         letter-spacing: 3px;
     }
 
     text-align: center;
+    margin-top: 88px !important;
 
     &:after {
         content: ".";
@@ -114,13 +139,19 @@ a {
 
 @media (width <=767px) {
 
+//  body 
+//     {
+//         background: url('../img/Mobile-coming-soon-bg.jpg');
+//         background-size: cover;
+//     }
     .magic {
         width: 15rem;
         height: 15rem;
-        &:after
-        {
+        background: url('../img/Mobile-coming-soon-bg.jpg') 50% 50% no-repeat fixed;
+        background-size: cover;
+
+        &:after {
             content: "";
-            background: url('../img/mouse-hover.png') ;
             background-size: cover;
             width: 15rem;
             height: 15rem;
@@ -129,14 +160,25 @@ a {
         }
     }
 
+    .comming-soon {
+        margin-top: 77px !important;
+
+        h3 {
+            margin-top: 0.5rem;
+            font-size: 19px;
+            letter-spacing: 3px;
+        }
+    }
+
     .scene {
 
         .content {
             position: absolute;
             top: 50%;
-            left: 25%;
+            left: 50%;
             z-index: 9999;
-            text-align: center;
+            // text-align: center;
+            transform: translate(-50%, -39%);
         }
     }
 
@@ -144,10 +186,16 @@ a {
         display: none;
     }
 
+    span.text {
+        font-size: 21px;
+    }
+
     header {
         background-color: transparent;
+        justify-content: center;
+
         img {
-            width: 100% !important;
+            width: 250px;
         }
     }
 }

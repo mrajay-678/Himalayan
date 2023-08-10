@@ -17,20 +17,25 @@ body {
 }
 
 header {
-  z-index: 9999;
-  position: sticky;
-  padding-inline: 40px;
+  padding-inline: 39px;
+  padding-top: 38px;
+}
+header img {
+  width: 250px;
+}
+
+span.text {
+  font-size: 27px;
 }
 
 .scene {
   position: relative;
-  background: #283337;
   height: 100vh;
 }
 .scene .content {
   position: absolute;
-  top: 35%;
-  left: 15%;
+  top: 40%;
+  left: 16.8%;
   z-index: 9999;
   text-align: center;
 }
@@ -56,6 +61,7 @@ h1 {
   border-radius: 50%;
   box-shadow: 10px 10px 10px #283337, 0 0 10px #283337;
   transform-style: preserve-3d;
+  border: 2px solid #283337;
 }
 .magic:after {
   content: "";
@@ -65,6 +71,8 @@ h1 {
   height: 20rem;
   position: absolute;
   border-radius: 50%;
+  top: -1px;
+  left: -1px;
 }
 
 .check-out {
@@ -78,6 +86,11 @@ h1 {
   font-family: test;
 }
 
+.mail-me {
+  font-size: 18px;
+  margin-right: 13px;
+}
+
 a {
   text-decoration: none;
   color: #b7dcdf;
@@ -88,9 +101,13 @@ a:hover {
 
 .comming-soon {
   text-align: center;
+  margin-top: 88px !important;
 }
 .comming-soon h3 {
-  margin-top: 0.5rem;
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  font-weight: 600;
+  font-size: 23px;
   letter-spacing: 3px;
 }
 .comming-soon:after {
@@ -104,30 +121,43 @@ a:hover {
   .magic {
     width: 15rem;
     height: 15rem;
+    background: url("../img/Mobile-coming-soon-bg.jpg") 50% 50% no-repeat fixed;
+    background-size: cover;
   }
   .magic:after {
     content: "";
-    background: url("../img/mouse-hover.png");
     background-size: cover;
     width: 15rem;
     height: 15rem;
     position: absolute;
     border-radius: 50%;
   }
+  .comming-soon {
+    margin-top: 77px !important;
+  }
+  .comming-soon h3 {
+    margin-top: 0.5rem;
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
   .scene .content {
     position: absolute;
     top: 50%;
-    left: 25%;
+    left: 50%;
     z-index: 9999;
-    text-align: center;
+    transform: translate(-50%, -39%);
   }
   .email-us {
     display: none;
   }
+  span.text {
+    font-size: 21px;
+  }
   header {
     background-color: transparent;
+    justify-content: center;
   }
   header img {
-    width: 100% !important;
+    width: 250px;
   }
 }/*# sourceMappingURL=style.css.map */
