@@ -105,6 +105,15 @@ a:hover {
     width: 15rem;
     height: 15rem;
   }
+  .magic:after {
+    content: "";
+    background: url("../img/mouse-hover.png");
+    background-size: cover;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+  }
   .scene .content {
     position: absolute;
     top: 50%;
