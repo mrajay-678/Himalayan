@@ -17,6 +17,7 @@ body {
     overflow: hidden;
     background: #243339;
     margin: 0 auto;
+    cursor: none;
 }
 
 //  body 
@@ -25,11 +26,10 @@ body {
 //         background-size: cover;
 //     }
 header {
-    // z-index: 9999;
-    // position: sticky;
-    // // background: #243339;
     padding-inline: 39px;
     padding-top: 38px;
+    position: sticky;
+    z-index: 9999;
 
     img {
         width: 250px;
@@ -68,8 +68,8 @@ h1 {
     position: absolute;
     top: calc(50% - 10rem);
     left: calc(50% - 10rem);
-    width: 20rem;
-    height: 20rem;
+    width: 360px;
+    height: 360px;
     background: url('../img/Himmaleh-Coming-Soon-BG.jpg') 50% 50% no-repeat fixed;
     background-size: cover;
     border-radius: 50%;
@@ -81,8 +81,8 @@ h1 {
         content: "";
         background: url('../img/mouse-hover.png');
         background-size: cover;
-        width: 20rem;
-        height: 20rem;
+        width: 360px;
+        height: 360px;
         position: absolute;
         border-radius: 50%;
         top: -1px;
