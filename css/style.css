@@ -55,11 +55,16 @@ h1 {
   background-size: cover;
   border-radius: 50%;
   box-shadow: 10px 10px 10px #283337, 0 0 10px #283337;
+  transform-style: preserve-3d;
 }
 .magic:after {
   content: "";
-  background: url("../img/mouse-hover.png") 50% 50% no-repeat fixed;
+  background: url("../img/mouse-hover.png");
   background-size: cover;
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  border-radius: 50%;
 }
 
 .check-out {
