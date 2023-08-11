@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;0,700;1,200&display=swap");
 *,
 *:before,
 *:after {
@@ -121,11 +121,10 @@ a:hover {
 .comming-soon {
   margin-top: 20px !important;
 }
-.comming-soon h3 {
+.comming-soon p {
   margin-top: 1rem !important;
   margin-bottom: 1rem !important;
-  font-weight: 600;
-  font-size: 23px;
+  font-size: 16px;
   letter-spacing: 3px;
 }
 .comming-soon:before {
@@ -142,16 +141,17 @@ a:hover {
 }
 @media (width < 767px) {
   .text-bold {
-    font-size: 36px;
+    font-size: 21px;
     font-weight: 900;
-    line-height: 1;
+    line-height: 36px;
     margin-bottom: 16px;
+    letter-spacing: 4px;
   }
   .text-italic {
-    font-size: 33px;
+    font-size: 21px;
     font-style: italic;
     font-weight: 300;
-    line-height: 1;
+    line-height: 18px;
     font-family: "Barlow";
   }
   .magic {
@@ -168,14 +168,16 @@ a:hover {
     position: absolute;
     border-radius: 50%;
   }
-  .comming-soon h2 {
+  .comming-soon p {
     font-size: 19px;
     letter-spacing: 3px;
-    line-height: 80px !important;
+    line-height: 60px !important;
   }
   .mobile-mail-us {
     text-align: center;
     padding-inline: 20%;
+    z-index: 9999;
+    position: relative;
   }
   .scene {
     height: calc(100% - 150px);
