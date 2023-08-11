@@ -12,7 +12,7 @@ body {
   color: #b7dcdf;
   font-family: "Barlow";
   overflow: hidden;
-  background: #243339;
+  background: #283337;
   margin: 0 auto;
   cursor: none;
 }
@@ -22,9 +22,13 @@ header {
   padding-top: 38px;
   position: sticky;
   z-index: 9999;
+  background: #283337;
+  box-shadow: 0px 0px 10px #1d272a;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 header img {
-  width: 250px;
+  width: 200px;
 }
 
 span.text {
@@ -32,10 +36,11 @@ span.text {
 }
 
 .text-bold {
-  font-size: 76px;
+  font-size: 21px;
   font-weight: 900;
-  line-height: 1;
+  line-height: 36px;
   margin-bottom: 16px;
+  letter-spacing: 4px;
 }
 
 .text-italic {
@@ -50,7 +55,8 @@ span.text {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 5%;
+  justify-content: center;
+  text-align: center;
   height: 100vh;
 }
 .scene .content {
@@ -71,11 +77,11 @@ h1 {
 .magic {
   z-index: 5;
   position: absolute;
-  top: calc(50% - 10rem);
-  left: calc(50% - 10rem);
+  top: 50%;
+  left: 80%;
   width: 360px;
   height: 360px;
-  background: url("../img/Himmaleh-Coming-Soon-BG.jpg") 50% 50% no-repeat fixed;
+  background: url("../img/Himmaleh-Coming-Soon-BG.jpg") 50% -80% no-repeat fixed;
   background-size: cover;
   border-radius: 50%;
   box-shadow: 10px 10px 10px #283337, 0 0 10px #283337;
@@ -106,7 +112,7 @@ h1 {
 }
 
 .mail-me {
-  font-size: 18px;
+  font-size: 15px;
   margin-right: 13px;
 }
 
@@ -180,10 +186,11 @@ a:hover {
     position: relative;
   }
   .scene {
-    height: calc(100% - 150px);
+    height: calc(100% - 300px);
     display: flex;
     padding: 0 !important;
-    align-items: self-end;
+    align-items: center;
+    margin-top: 151px;
     justify-content: center;
   }
   .scene .content {
@@ -201,10 +208,6 @@ a:hover {
   }
   header {
     justify-content: center;
-    background: #283337;
-    box-shadow: 0px 0px 10px #1d272a;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
   header img {
     width: 180px;
