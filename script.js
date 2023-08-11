@@ -3,6 +3,7 @@ $(document).ready(function () {
   $(document).on("mousemove", function (e) {
     $(".magic").css({ "left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf });
   });
+  $('.comming-soon').trigger('click')
 });
 
 
