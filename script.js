@@ -1,14 +1,11 @@
 $(document).ready(function () {
-  var magicWHalf = $(".magic").width() / 2;
   $(document).on("mousemove", function (e) {
-    console.log(e)
-    $(".magic").css({ "left": e.offsetX - magicWHalf, "top": e.offsetY - magicWHalf });
+    console.log(pageX,'pageX');
+    console.log(pageY,'pageY');
+    $(".magic").css({ "left": e.pageX - 180, "top": e.pageY - 180 });
   });
-  $('.comming-soon').focus()
 });
 
-
-console.log(screen.width)
 if (screen.width <= 1024) {
   var tl = gsap.timeline()
     .to('.magic', {
