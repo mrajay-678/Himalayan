@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(document).on("mousemove", function (e) {
-    console.log(pageX,'pageX');
-    console.log(pageY,'pageY');
+    console.log(e.pageX,'pageX');
+    console.log(e.pageY,'pageY');
     $(".magic").css({ "left": e.pageX - 180, "top": e.pageY - 180 });
   });
 });
