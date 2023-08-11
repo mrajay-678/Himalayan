@@ -217,6 +217,7 @@ a {
     .scene {
         height: calc(100% - 150px);
         display: flex;
+        padding: 0 !important;
         align-items: self-end;
         justify-content: center;
         .content {
