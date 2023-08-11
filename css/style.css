@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,600;1,200&display=swap");
 *,
 *:before,
 *:after {
@@ -31,16 +31,32 @@ span.text {
   font-size: 27px;
 }
 
+.text-bold {
+  font-size: 76px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.text-italic {
+  font-size: 73px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1;
+  font-family: "Barlow";
+}
+
 .scene {
   position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
   height: 100vh;
 }
 .scene .content {
-  position: absolute;
-  top: 40%;
-  left: 16.8%;
+  width: 52%;
   z-index: 9999;
-  text-align: center;
+  text-transform: capitalize;
 }
 
 h1 {
@@ -103,8 +119,7 @@ a:hover {
 }
 
 .comming-soon {
-  text-align: center;
-  margin-top: 88px !important;
+  margin-top: 20px !important;
 }
 .comming-soon h3 {
   margin-top: 1rem !important;
@@ -113,14 +128,32 @@ a:hover {
   font-size: 23px;
   letter-spacing: 3px;
 }
-.comming-soon:after {
-  content: ".";
-}
 .comming-soon:before {
   content: ".";
 }
 
-@media (width <= 767px) {
+@media (767px <= width <= 1024px) {
+  .text-bold {
+    font-size: 36px;
+  }
+  .text-italic {
+    font-size: 33px;
+  }
+}
+@media (width < 767px) {
+  .text-bold {
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .text-italic {
+    font-size: 33px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1;
+    font-family: "Barlow";
+  }
   .magic {
     width: 15rem;
     height: 15rem;
@@ -135,13 +168,15 @@ a:hover {
     position: absolute;
     border-radius: 50%;
   }
-  .comming-soon {
-    margin-top: 77px !important;
-  }
-  .comming-soon h3 {
-    margin-top: 0.5rem;
+  .comming-soon h2 {
     font-size: 19px;
     letter-spacing: 3px;
+    line-height: 80px !important;
+  }
+  .mobile-mail-us {
+    position: absolute;
+    bottom: -46%;
+    left: 20%;
   }
   .scene .content {
     position: absolute;
@@ -150,6 +185,8 @@ a:hover {
     z-index: 9999;
     transform: translate(-50%, -39%);
     width: 100%;
+    max-width: 310px;
+    text-align: center;
   }
   .email-us {
     display: none;
