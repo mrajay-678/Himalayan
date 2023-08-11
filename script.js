@@ -1,7 +1,8 @@
 $(document).ready(function () {
   var magicWHalf = $(".magic").width() / 2;
   $(document).on("mousemove", function (e) {
-    $(".magic").css({ "left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf });
+    console.log(e)
+    $(".magic").css({ "left": e.offsetX - magicWHalf, "top": e.offsetY - magicWHalf });
   });
   $('.comming-soon').focus()
 });
