@@ -77,8 +77,8 @@ h1 {
 .magic {
   z-index: 5;
   position: absolute;
-  top: 50%;
-  left: 80%;
+  top: calc(50% - 10rem);
+  left: calc(50% - 10rem);
   width: 360px;
   height: 360px;
   background: url("../img/Himmaleh-Coming-Soon-BG.jpg") 50% -80% no-repeat fixed;
