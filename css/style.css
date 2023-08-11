@@ -175,7 +175,7 @@ a:hover {
   }
   .mobile-mail-us {
     text-align: center;
-    padding-left: 32px;
+    padding-inline: 20%;
   }
   .scene {
     height: calc(100% - 150px);
