@@ -198,10 +198,13 @@ a:hover {
     font-size: 21px;
   }
   header {
-    background-color: transparent;
     justify-content: center;
+    background: #283337;
+    box-shadow: 0px 0px 10px #1d272a;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   header img {
-    width: 250px;
+    width: 180px;
   }
 }/*# sourceMappingURL=style.css.map */
