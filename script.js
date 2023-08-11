@@ -1,7 +1,7 @@
 $(document).ready(function () {
   var magicWHalf = $(".magic").width() / 2;
   $(document).on("mousemove", function (e) {
-    $(".magic").css({ "left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf });
+    $(".magic").css({ "left": e.X - magicWHalf, "top": e.Y - magicWHalf });
   });
   $('.comming-soon').trigger('click')
 });
