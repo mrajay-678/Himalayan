@@ -83,6 +83,8 @@ h1 {
 .magic {
   z-index: 5;
   position: absolute;
+  top: calc(50% - 160px);
+  left: calc(50% - 160px);
   width: 360px;
   height: 360px;
   background: url("../img/Himmaleh-Coming-Soon-BG.jpg") 50% -80% no-repeat fixed;
