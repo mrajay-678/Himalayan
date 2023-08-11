@@ -1,9 +1,9 @@
 $(document).ready(function () {
   var magicWHalf = $(".magic").width() / 2;
   $(document).on("mousemove", function (e) {
-    $(".magic").css({ "left": e.X - magicWHalf, "top": e.Y - magicWHalf });
+    $(".magic").css({ "left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf });
   });
-  $('.comming-soon').trigger('click')
+  $('.comming-soon').focus()
 });
 
 
