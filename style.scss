@@ -208,19 +208,23 @@ a {
         }
     }
     .mobile-mail-us{
-        position: absolute;
-        bottom: -46%;
-        left: 20%;
+        // position: absolute;
+        // bottom: -46%;
+        // left: 20%;
+        text-align: center;
     }
     .scene {
-
+        height: calc(100% - 150px);
+        display: flex;
+        align-items: self-end;
+        justify-content: center;
         .content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
+            position: unset;
+            // top: 50%;
+            // left: 50%;
             z-index: 9999;
             // text-align: center;
-            transform: translate(-50%, -39%);
+            // transform: translate(-50%, -39%);
             width: 100%;
             max-width: 310px;
             text-align: center;
