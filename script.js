@@ -1,9 +1,6 @@
-$(document).ready(function () {
-  $(document).on("mousemove", function (e) {
-    console.log(e.pageX,'pageX');
-    console.log(e.pageY,'pageY');
-    $(".magic").css({ "left": e.pageX - 180, "top": e.pageY - 180 });
-  });
+document.addEventListener("mousemove", function (e) {
+  document.querySelector(".magic").style.left = e.pageX - 180;
+  document.querySelector(".magic").style.top = e.pageY - 180;
 });
 
 if (screen.width <= 1024) {
