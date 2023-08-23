@@ -1,6 +1,12 @@
-document.addEventListener("mousemove", function (e) {
-  document.querySelector(".magic").style.left = e.pageX - 180;
-  document.querySelector(".magic").style.top = e.pageY - 180;
+// document.addEventListener("DOMContentLoaded", () => {
+//   document.addEventListener("mousemove", function (e) {
+//     document.querySelector(".magic").style.left = e.pageX - 180;
+//     document.querySelector(".magic").style.top = e.pageY - 180;
+//     console.log(e.pageX)
+//   });
+// });
+$(document).on("mousemove", function (e) {
+  $(".magic").css({ "left": e.pageX - 180, "top": e.pageY - 180 });
 });
 
 if (screen.width <= 1024) {
